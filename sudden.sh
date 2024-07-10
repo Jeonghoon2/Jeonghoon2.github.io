@@ -4,7 +4,9 @@ FILE=./_SUDDEN
 
 while true
 do
-	echo "check"
-	sleep 3
-
+        if [[ -f "맥라렌.html" ]]; then
+                echo "check"
+                sleep 3
+        fi
 done
+
