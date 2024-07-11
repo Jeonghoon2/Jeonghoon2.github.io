@@ -6,7 +6,8 @@ while true
 do
 DATE=$(date +"%Y/%m/%d %H:%M:%S")
         if [[ -f "$FILE" ]]; then
-                echo "SUDDEN!"
+		ST="$DATE, SUDDEN!!"
+		echo $ST
 	else
 		clear
 		figlet SUDDEN
