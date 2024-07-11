@@ -1,12 +1,18 @@
-#!/bin/bash
+#/bin/bash
 
-FILE=./_SUDDEN
+FILE=_SUDDEN
 
 while true
 do
-        if [[ -f "맥라렌.html" ]]; then
-                echo "check"
-                sleep 3
+DATE=$(date +"%Y/%m/%d %H:%M:%S")
+        if [[ -f "$FILE" ]]; then
+                echo "SUDDEN!"
+	else
+		clear
+		figlet SUDDEN
+		echo $DATE
         fi
+	sleep 3
+
 done
 
