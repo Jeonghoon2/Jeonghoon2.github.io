@@ -1,6 +1,7 @@
 #/bin/bash
 
-FILE="_SUDDEN"
+FILE=_SUDDEN
+
 
 while true
 do
@@ -8,6 +9,8 @@ do
                 echo "SUDDEN!"
 	else
 		clear
+		figlet SUDDEN
+		date
         fi
 	sleep 3
 
